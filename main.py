@@ -42,7 +42,7 @@ def main():
                 if not asteroid.does_collide(shot):
                     continue
                 shot.kill()
-                asteroid.kill()
+                asteroid.split()
         for d in drawable:
             d.draw(screen)
         pygame.display.flip()
